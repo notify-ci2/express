@@ -16,7 +16,10 @@ matrix:
     - node_js: "0.11"
   exclude:
     - node_js: "0.8"
-  
+  include:
+    - node_js: "0.10"
+      env: test=aaa
+      
 script: "npm run-script test-travis"
 
 after_script:
