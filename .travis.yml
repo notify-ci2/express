@@ -5,10 +5,17 @@ build_image: shippable/minv2
 node_js:
   - "0.10"
   - "0.11"
+  - "0.8"
 
+env:
+ - Foo=bar
+ - Bar=foo
+ 
 matrix:
   allow_failures:
     - node_js: "0.11"
+  exclude:
+    - node_js: "0.8"
   
 script: "npm run-script test-travis"
 
