@@ -4,8 +4,8 @@ build_image: shippable/minv2
 
 node_js:
   - "0.10"
-  - "0.11"
-  - "0.8"
+  #- "0.11"
+ # - "0.8"
 
 #env:
 # - Foo=bar
@@ -33,7 +33,3 @@ notifications:
   irc: "chat.freenode.net#test-irc"
 
 archive: true
-
-#cache: true
-
-
